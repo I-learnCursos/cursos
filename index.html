@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- BOX ICONS -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Login Form -->
+    <!-- HTML -->
+    <div class="l-form">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+        <div class="form">
+            <img src="assets/img/authentication.svg" alt="" class="form__img">
+
+            <form class="form__content" id="login-form">
+                <h1 class="form__title">Bem-vindo</h1>
+
+                <div class="form__div form__div-one">
+                    <div class="form__icon">
+                        <i class='bx bx-user-circle'></i>
+                    </div>
+                    <div class="form__div-input">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" class="form__input" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form__div">
+                    <div class="form__icon">
+                        <i class='bx bx-lock'></i>
+                    </div>
+                    <div class="form__div-input">
+                        <label for="password" class="form__label">Senha</label>
+                        <input type="password" class="form__input" id="password" name="password" required>
+                    </div>
+                </div>
+                <a href="#" class="form__forgot" onclick="recoverPassword()">Esqueceu a senha?</a>
+                <button type="submit" class="form__button">Entrar</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="firebase-init.js"></script>
+    <script src="validations.js"></script>
+    <script src="loading.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
